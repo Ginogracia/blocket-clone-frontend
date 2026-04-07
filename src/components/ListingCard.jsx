@@ -2,7 +2,7 @@ import "../styles/components/ListingCard.scss";
 
 const ListingCard = ({ listing, onClick }) => {
   const imageUrl = listing.image
-    ? `http://localhost:5000${listing.image}`
+    ? `https://blocket-clone.onrender.com${listing.image}`
     : null;
 
   return (

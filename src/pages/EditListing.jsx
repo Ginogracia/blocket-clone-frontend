@@ -47,7 +47,7 @@ const EditListing = () => {
           category: listing.category,
         });
         if (listing.image) {
-          setImagePreview(`http://localhost:5000${listing.image}`);
+          setImagePreview(`https://blocket-clone.onrender.com${listing.image}`);
         }
       } catch (err) {
         setError("Annonsen hittades inte");
