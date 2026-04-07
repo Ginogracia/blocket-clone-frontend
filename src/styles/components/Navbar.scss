@@ -1,0 +1,142 @@
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__logo {
+    text-decoration: none;
+
+    &-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: #e8173a;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__search {
+    flex: 1;
+    display: flex;
+    max-width: 600px;
+
+    &-input {
+      flex: 1;
+      height: 40px;
+      padding: 0 16px;
+      border: 2px solid #e0e0e0;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      font-size: 14px;
+      outline: none;
+
+      &:focus {
+        border-color: #e8173a;
+      }
+    }
+
+    &-button {
+      height: 40px;
+      padding: 0 20px;
+      background-color: #e8173a;
+      color: #ffffff;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #c9132f;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__username {
+    font-size: 14px;
+    color: #1a1a1a;
+  }
+
+  &__sell-button {
+    height: 36px;
+    padding: 0 16px;
+    background-color: #e8173a;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #c9132f;
+    }
+  }
+
+  &__login-button {
+    height: 36px;
+    padding: 0 16px;
+    border: 2px solid #e8173a;
+    color: #e8173a;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #fff0f2;
+    }
+  }
+
+  &__register-button {
+    height: 36px;
+    padding: 0 16px;
+    background-color: #e8173a;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #c9132f;
+    }
+  }
+
+  &__logout-button {
+    height: 36px;
+    padding: 0 16px;
+    border: 2px solid #e0e0e0;
+    background: none;
+    color: #1a1a1a;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #1a1a1a;
+    }
+  }
+}
