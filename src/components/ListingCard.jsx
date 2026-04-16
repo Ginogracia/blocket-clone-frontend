@@ -1,17 +1,13 @@
 import "../styles/components/ListingCard.scss";
 
 const ListingCard = ({ listing, onClick }) => {
-  const imageUrl = listing.image
-    ? `https://blocket-clone.onrender.com${listing.image}`
-    : null;
-
   return (
     <div className="listing-card" onClick={onClick}>
       <div className="listing-card__image-wrapper">
-        {imageUrl ? (
+        {listing.image ? (
           <img
             className="listing-card__image"
-            src={imageUrl}
+            src={listing.image}
             alt={listing.title}
           />
         ) : (
