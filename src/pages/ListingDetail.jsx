@@ -54,7 +54,7 @@ const ListingDetail = () => {
           {listing.image ? (
             <img
               className="listing-detail__image"
-              src={`https://blocket-clone.onrender.com${listing.image}`}
+              src={listing.image}
               alt={listing.title}
             />
           ) : (
